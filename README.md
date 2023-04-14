@@ -32,7 +32,7 @@ See under User Story
 
 The link to deployed application is: https://esztergb.github.io/My-Portfolio/
 
-![ScreenShot](assets/images/screenshot.png)
+![ScreenShot](assets/images/screenshotfull.png)
 
 ## Usage
 
