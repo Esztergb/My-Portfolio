@@ -1,23 +1,31 @@
 body {
     font-family: 'Poppins', sans-serif;
-    color: #68473d;
+    color: var(--pink);
 }
 section {
-    background-color: #d7eef0;
+    background-color: var(--black);
     }
 
+:root {
+    --black: #000000;
+    --grey: #575757;
+    --pink: #cc007a;
+    --light: #f4ece1;
+    --gold: #f5d59a;
+}
+      
 /*--Hero Area--*/
 .hero {
-    background-color: #abd3d3;
+    background-color: var(--black);
     height: 100vh;
-    color: #68473d;
+    color: var(--pink);
     font-size: 40px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: var(--pink);
 }
 
 ul {
@@ -70,7 +78,7 @@ p {
     width: 180px;
     height: 55px;
     border-radius: 25px;
-    background-color: #f9ddc3;
+    background-color: var(--pink);
     text-align: center;
     font-size: 30px;
     font-weight: 300;
@@ -79,17 +87,16 @@ p {
 }
 
 .button:hover {
-    background-color: #d2b599;
+    background-color: var(--black);
 }
 
 .button:active {
-    background-color: #8ea2a2;
-    color: #434e4e;
+    background-color: var(--grey);
 }
 
 footer {
-    background-color: #68473d;
-    color: #f9ddc3;
+    background-color: var(--grey);
+    color: var(--gold);
     text-align: center;
     padding: 80px;
 }
@@ -140,9 +147,10 @@ padding: 40px;
 }
 
 .project-card {
+    background-color: var(--light);
     width: 300px;
     height: 400px;
-    box-shadow: 5px 5px 20px #d0ccc8;
+    box-shadow: 5px 5px 20px var(--gold);
     margin: 10px;
 }
 .project-container {
@@ -171,18 +179,16 @@ hr {
 
 .project-link {
     text-decoration: none;
-    color: #d2b599;
+    color: var(--grey);
 }
 
 a {
     text-decoration: none;
-    color: #68473d;
+    color: var(--light);
 }
 
 .send-email {
     font-size: 30px;
     text-decoration-line: underline;
-    color: #d2b599 
-    
-    
+    color: var(--light);  
 }

@@ -2,7 +2,7 @@
 
 ## User Story
 
-This is my portfolio website to showcase my knowledge and creaivity to potential employers. Curently the content is full of placeholders to be replaced later when I have actual projects completed
+This is my portfolio website to showcase my knowledge and creaivity to potential employers. Curently the content is full of placeholders to be replaced later when I have actual projects completed. This website is a work in progress and I hope to keep improoving it over time. 
 
 ## Acceptance Criteria
 
@@ -26,7 +26,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Description
 
-TBD
+See under User Story
 
 ## Installation
 
@@ -42,7 +42,7 @@ This project was created to incorporate informations shared on basic HTML and CS
 
 Thank you for tips and sugestions from Bootcamp instructors and classmates. 
 I have used https://www.w3schools.com/ and https://www.stackoverflow.com to research information.
-I have reviewed you tube videos from Ania Kubow to help me with this project
+I have reviewed you tube videos from Ania Kubow to help me with this project. 
 
 ## License
 
