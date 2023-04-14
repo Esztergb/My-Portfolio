@@ -6,6 +6,7 @@ section {
     background-color: var(--black);
     }
 
+    /*color chart*/
 :root {
     --black: #000000;
     --grey: #575757;
@@ -41,6 +42,11 @@ li {
     text-decoration: none;
 }
 
+.logo {
+    height: 100px;
+    margin: 15px;
+}
+
 h1 {
     font-size: 70px;
     margin: 0;
@@ -52,9 +58,9 @@ h2 {
 }
 
 p {
-    margin: 0;
     font-size: 30px;
     font-weight: 300;
+    margin: 0;
 }
 
 .subtext {
@@ -94,20 +100,8 @@ p {
     background-color: var(--grey);
 }
 
-footer {
-    background-color: var(--grey);
-    color: var(--gold);
-    text-align: center;
-    padding: 80px;
-}
-
 .socials {
     padding-bottom: 200px;
-}
-
-.logo {
-    height: 90px;
-    margin: 30px;
 }
 
 .social-logo {
@@ -117,19 +111,21 @@ footer {
 /*About Me Area*/
 
 .sub-section {
+    color: var(--gold);
     display: flex;
     justify-content: space-around;
     padding: 80px;
 }
 
 @media only screen and (max-width: 1000px) {
-    .sub-section{
+    .sub-section {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 }
 
-.sub-section-alternative {
+.sub-section-two {
+background-color: var(--black);
 display: flex;
 flex-direction: column;
 text-align: center;
@@ -146,14 +142,25 @@ padding: 40px;
     align-items: center;
 }
 
+.main-card {
+    background-color: var(--pink);
+    color: var(--light);
+    width: 1000px;
+    height: 400px;
+    box-shadow: 5px 5px 20px var(--gold);
+    margin: 10px;
+}
+
 .project-card {
-    background-color: var(--light);
+    background-color: var(--pink);
+    color: var(--light);
     width: 300px;
     height: 400px;
     box-shadow: 5px 5px 20px var(--gold);
     margin: 10px;
 }
-.project-container {
+
+.project-container-main, .project-container {
     display: flex;
     justify-content: space-around;
     border-bottom: 30px;
@@ -164,6 +171,12 @@ padding: 40px;
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+.project-image-main {
+    margin-top: 25px;
+    width: 400px;
+    border-radius: 50px;
 }
 
 .project-image {
@@ -179,12 +192,19 @@ hr {
 
 .project-link {
     text-decoration: none;
-    color: var(--grey);
+    color: var(--gold);
 }
 
 a {
     text-decoration: none;
     color: var(--light);
+}
+
+footer {
+    background-color: var(--grey);
+    color: var(--gold);
+    text-align: center;
+    padding: 80px;
 }
 
 .send-email {
