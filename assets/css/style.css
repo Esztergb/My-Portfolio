@@ -3,7 +3,7 @@ body {
     color: var(--pink);
 }
 
-    /*color chart*/
+/*color chart*/
 :root {
     --black: #000000;
     --grey: #575757;
@@ -11,39 +11,8 @@ body {
     --light: #f6eab2;
     --gold: #f3d430;
 }
-      
-/*--Hero Area--*/
-.hero {
-    background-color: var(--black); 
-    color: var(--pink);
-    font-size: 40px;
-}
 
-nav {
-    background-color: var(--pink);
-    display: flex;
-    justify-content: space-between;
-   
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 300px;
-    justify-content: space-around;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-li {
-    text-decoration: none;
-}
-
-.logo {
-    height: 100px;
-    margin: 15px;
-}
-
+/*font sizes*/
 h1 {
     font-size: 70px;
     margin: 0;
@@ -65,6 +34,45 @@ p {
     font-weight: 300;
 }
 
+/*link colors, unless otherwise specified*/
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+/*--body--*/
+.body {
+    background-color: var(--black); 
+    color: var(--pink);
+    font-size: 40px;
+}
+
+/*--navigation bar--*/
+nav {
+    background-color: var(--pink);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;
+    margin: 15px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 300px;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li {
+    text-decoration: none;
+}
+
+/*--hero area--*/
 .hero-area {
     display: flex;
     height: 100%;
@@ -105,30 +113,20 @@ p {
     margin: 20px;
 }
 
-/*About Me Area*/
+@media only screen and (max-width: 1000px) {
+    .hero-area{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
+/*--about me area--*/
 .sub-section {
     background-color: var(--black);
     color: var(--gold);
     display: flex;
     justify-content: space-around;
     padding: 80px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .sub-section {
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
-}
-
-.sub-section-two {
-    /*background-image: url(../images/IMG_2497.jpeg);*/ 
-    background-color: var(--black);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 40px;
 }
 
 .headshot {
@@ -139,6 +137,24 @@ p {
 .headshot-container {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sub-section {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+/*Project Area*/
+.sub-section-two {
+    /*working on backgroung image opacity*/
+    /*background-image: url(../images/IMG_2497.jpeg);*/ 
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
 }
 
 .main-card {
@@ -165,13 +181,6 @@ p {
     border-bottom: 30px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .project-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 .project-image-main {
     margin-top: 25px;
     width: 400px;
@@ -194,11 +203,14 @@ hr {
     color: var(--gold);
 }
 
-a {
-    text-decoration: none;
-    color: var(--light);
+@media only screen and (max-width: 1000px) {
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
+/*footer*/
 footer {
     background-color: var(--grey);
     color: var(--gold);
