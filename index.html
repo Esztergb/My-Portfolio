@@ -13,23 +13,22 @@
 <body>
   
     <!--body-->
-    <main class="body">
+    <main class="landing-page">
         <!--navigation bar-->
-        <nav>
-            <img class="logo" src="assets/images/E.png" alt="Eszter GB logo"/>
-            <ul>
-                <!--ID tag will take me to different areas on the page-->
-                <!--target="_blank" will open the resume in a separate window-->
-                <li><a href="assets/ESZTER BARBUSCIA RESUME 2022.pdf"target="_blank">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact me</a></li>
-            </ul>
+            <!--ID tag will take me to different areas on the page-->
+            <!--target="_blank" will open the resume in a separate window-->
+        <nav class="navbar">
+            <a href="#contact">Contact</a>
+            <a href="#projects">Projects</a>
+            <a href="assets/ESZTER BARBUSCIA RESUME 2022.pdf"target="_blank">Resume</a>
+            <a href="#about-me">About me</a>
+            <a href="#home">Home</a>
         </nav>
         <!--hero area-->
-        <hero class="hero-area">
+        <hero class="hero-area" id="home">
             <section class="hero-text">
                 <h1>Eszter Barbuscia</h1>
-                <p>'Future' Full Stack Developer</p>
+                <p id="hero-p">'Future' Full Stack Developer</p>
                 <div class="button"><a href="#about-me">About me</a></div>
             </section>
             <section class="socials">
@@ -98,7 +97,7 @@
     </main>
 
     <!--footer-->
-    <footer id="contact-me">
+    <footer id="contact">
              <h2>Contact me</h2>
             <div><a class="send-email" href="mailto:gubiscom@yahoo.com">Send Email</a></div>
     </footer>

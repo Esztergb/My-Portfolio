@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--pink);
+    margin: 0;
 }
 
 /*color chart*/
@@ -25,7 +26,7 @@ h2 {
 
 p {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 200;
     margin: 0;
 }
 
@@ -41,50 +42,59 @@ a {
 }
 
 /*--body--*/
-.body {
-    background-color: var(--black); 
+.landing-page {
+     /*working on backgroung image opacity*/
+    background-image: url(../images/IMG_2497.jpeg);
+    /*background-color: var(--black); */
     color: var(--pink);
-    font-size: 40px;
-}
+  }
 
 /*--navigation bar--*/
-nav {
+.navbar {
+    overflow: hidden;
     background-color: var(--pink);
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    height: 100px;
-    margin: 15px;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 300px;
-    justify-content: space-around;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-li {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: var(--light);
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-}
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: var(--gold);
+    color: var(--grey);
+  }
 
+  .navbar a:active {
+    background-color: var(--grey);
+    color: var(--light);
+  }
+  
 /*--hero area--*/
 .hero-area {
     display: flex;
-    height: 100%;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .hero-text {
-    margin-left: 80px;
-    margin-bottom: 200px;
+   padding: 50px;
 }
 
+#hero-p {
+    color: var(--gold);
+    font-weight: 500;
+}
 .button {
     width: 180px;
     height: 55px;
@@ -106,11 +116,12 @@ li {
 }
 
 .socials {
-    padding-bottom: 200px;
+    text-align: center;
 }
 
 .social-logo {
-    margin: 20px;
+    padding: 50px;
+   
 }
 
 @media only screen and (max-width: 1000px) {
@@ -125,6 +136,7 @@ li {
     background-color: var(--black);
     color: var(--gold);
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding: 80px;
 }
@@ -148,8 +160,6 @@ li {
 
 /*Project Area*/
 .sub-section-two {
-    /*working on backgroung image opacity*/
-    /*background-image: url(../images/IMG_2497.jpeg);*/ 
     background-color: var(--black);
     display: flex;
     flex-direction: column;
@@ -214,9 +224,13 @@ hr {
 footer {
     background-color: var(--grey);
     color: var(--gold);
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 80px;
-}
+    }
 
 .send-email {
     font-size: 30px;
