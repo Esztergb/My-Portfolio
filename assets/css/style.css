@@ -2,31 +2,28 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--pink);
 }
-section {
-    background-color: var(--black);
-    }
 
     /*color chart*/
 :root {
     --black: #000000;
     --grey: #575757;
     --pink: #cc007a;
-    --light: #f4ece1;
-    --gold: #f5d59a;
+    --light: #f6eab2;
+    --gold: #f3d430;
 }
       
 /*--Hero Area--*/
 .hero {
-    background-color: var(--black);
-    height: 100vh;
+    background-color: var(--black); 
     color: var(--pink);
     font-size: 40px;
 }
 
 nav {
+    background-color: var(--pink);
     display: flex;
     justify-content: space-between;
-    background-color: var(--pink);
+   
 }
 
 ul {
@@ -111,6 +108,7 @@ p {
 /*About Me Area*/
 
 .sub-section {
+    background-color: var(--black);
     color: var(--gold);
     display: flex;
     justify-content: space-around;
@@ -125,11 +123,12 @@ p {
 }
 
 .sub-section-two {
-background-color: var(--black);
-display: flex;
-flex-direction: column;
-text-align: center;
-padding: 40px;
+    /*background-image: url(../images/IMG_2497.jpeg);*/ 
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
 }
 
 .headshot {
@@ -147,7 +146,7 @@ padding: 40px;
     color: var(--light);
     width: 1000px;
     height: 400px;
-    box-shadow: 5px 5px 20px var(--gold);
+    box-shadow: 5px 5px 20px var(--light);
     margin: 10px;
 }
 
@@ -156,7 +155,7 @@ padding: 40px;
     color: var(--light);
     width: 300px;
     height: 400px;
-    box-shadow: 5px 5px 20px var(--gold);
+    box-shadow: 5px 5px 20px var(--light);
     margin: 10px;
 }
 
