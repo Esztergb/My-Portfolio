@@ -8,6 +8,7 @@ body {
 :root {
     --black: #000000;
     --grey: #575757;
+    --ligh-grey: #bcbcbc;
     --pink: #cc007a;
     --light: #f6eab2;
     --gold: #f3d430;
@@ -75,6 +76,9 @@ a {
 /*--hero area--*/
 .hero-area {
     background-color: var(--black);
+    background-image: url("../images/cat3.jpg");
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,25 +171,38 @@ a {
 .main-card {
     background-color: var(--pink);
     color: var(--light);
-    width: 1000px;
-    height: 400px;
-    box-shadow: 5px 5px 20px var(--light);
+    position: relative;
+    flex: 1;
+    max-width: 940px;
+    height: 450px;
     margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px var(--ligh-grey);
+    
 }
 
 .project-card {
     background-color: var(--pink);
     color: var(--light);
-    width: 300px;
+    position: relative;
+    flex: 1;
+    max-width: 300px;
     height: 400px;
-    box-shadow: 5px 5px 20px var(--light);
     margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px var(--ligh-grey);
+
 }
 
-.project-container-main, .project-container {
+.project-container {
+    margin: 20px;
+}
+
+.row {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    border-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-image-main {
@@ -210,12 +227,18 @@ hr {
     color: var(--gold);
 }
 
-@media only screen and (max-width: 1000px) {
-    .project-container{
-        display: flex;
-        flex-wrap: wrap;
+@media only screen and (max-width: 800px) {
+    .project-card {
+        flex: 100%;
+        max-width: 400px;
+    }
+
+    .main-card {
+        flex: 100%;
+        max-width: 400px;
     }
 }
+
 
 /*footer*/
 footer {
