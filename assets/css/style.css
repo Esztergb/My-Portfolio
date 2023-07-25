@@ -17,6 +17,7 @@ body {
 /*font sizes*/
 h1 {
     font-size: 70px;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -138,6 +139,7 @@ a {
     align-items: center;
     justify-content: space-around;
     padding: 80px;
+    height: 100vh;
 }
 
 .headshot {
